@@ -1,0 +1,7 @@
+streamlit==1.42.2
+matplotlib
+DateTime==4.3
+pyowm==3.3.0
+pytz
+numpy
+python-dotenv
