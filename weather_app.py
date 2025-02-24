@@ -88,8 +88,11 @@ if st.sidebar.button("Get Forecast") and place:
         
             # Add temperature labels on top of bars
             for i in range(len(dates_list)):
-                ax.text(i - width/2, temp_min_list[i] + 1, f"{temp_min_list[i]}°", ha='center', color="white", fontsize=10, fontweight="bold")
-                ax.text(i + width/2, temp_max_list[i] + 1, f"{temp_max_list[i]}°", ha='center', color="black", fontsize=10, fontweight="bold")
+                ax.text(i - width/2, temp_min_list[i] + (max(temp_max_list)*0.05), f"{temp_min_list[i]}°", ha='center', color="white", fontsize=10, fontweight="bold")
+                ax.text(i + width/2, temp_max_list[i] +(max(temp_max_list)*0.05) , f"{temp_max_list[i]}°", ha='center', color="black", fontsize=10, fontweight="bold")
+
+            # Ensure enough space at the top
+            ax.set_ylim(0,max(temp_max_list)+ (max(temp_max_list)*0.2))    
 
         # Formatting
         ax.set_xticks(x)
