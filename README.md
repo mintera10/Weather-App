@@ -17,7 +17,7 @@
 
 ```sh
 # Clone the repository
-https://github.com/mintera10/Weather-App-.git
+https://github.com/mintera10/Weather-App.git
 
 # Navigate to the project directory
 cd weather-app
