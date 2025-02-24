@@ -39,7 +39,9 @@ streamlit run weather_app.py
 
 ## 🌍 **How It Works:**
 1️⃣ **Enter a city name**
+
 2️⃣ **Get the latest weather data**
+
 3️⃣ **Enjoy a seamless experience!**
 
 
